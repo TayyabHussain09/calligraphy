@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+nav {
+    background: rgb(0, 0, 0);
+}
+
+nav:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    color: rgb(0, 47, 255);
+    font-size: 46px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 0px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-bottom: -4px;
+    margin-top: -4px;
+    margin-right: 0px;
+    position: relative;
+}
+
+nav ul li {
+    background: black;
+    display: inline-block;
+    margin: 4px 5px;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 4px 4px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px #33fff3;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul li:hover>ul {
+    top: 75px;
+    opacity: 2;
+    visibility: visible;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 75px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul {
+    border-top: 0px;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 130px;
+    float: none;
+    display: list-item;
+    border-bottom: 5px solid rgba(241, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 35px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -42px;
+    left: 91px;
+}
+
+
+/* slider section*/
+
+.outer {
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner {
+    height: 700px;
+    width: 5600px;
+    -webkit-animation: tayyab 8s infinite;
+    overflow: hidden;
+}
+
+@-webkit-keyframes tayyab {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        margin-left: -1400px;
+    }
+    40% {
+        margin-left: -2800px;
+    }
+    60% {
+        margin-left: -0px;
+    }
+    80% {
+        margin-left: -0px;
+    }
+    010% {
+        margin-left: -0px;
+    }
+}
+
+.slider {
+    width: 82%;
+    position: relative;
+    margin-left: 124px;
+    background-color: black;
+}
+
+
+/* course calligraphy home page starup introduction*/
+
+h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(255, 30, 0);
+}
+
+p {
+    color: rgb(236, 236, 236);
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 900;
+    margin: 10px 0;
+    color: rgb(224, 9, 9);
+}
+
+
+/* some calligraphy introduction in the home page */
+
+.text {
+    font-style: italic;
+    font-weight: 900;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+#col {
+    margin-top: -35px;
+}
+
+#linktext {
+    color: rgb(21, 204, 217);
+    font-style: italic;
+}
+
+#linktext:hover {
+    color: yellow;
+    font-style: normal;
+}
+
+#selfbtn {
+    background-color: black;
+}
+
+#selfbtn:hover {
+    background-color: grey;
+}
+
+#selfimg {
+    border: 1px solid cyan;
+}
+
+#selfimg:hover {
+    border: 2px solid yellow;
+}
+
+
+/* picture section defining the sample of calligraphy*/
+
+#sample {
+    border: 1px solid cyan;
+}
+
+
+/* getting user Email for the News */
+
+#form-control {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#form-control:hover {
+    background-color: rgb(214, 164, 93)
+}
+
+#buttonself {
+    background-color: red;
+}
+
+#buttonself:hover {
+    background-color: rgb(98, 0, 255);
+}
+
+
+/* western history section*/
+
+h4 {
+    color: red;
+    font-style: italic;
+}
+
+
+/*cards exploration section*/
+
+.card-text {
+    text-align: justify;
+    font-style: italic;
+}
+
+
+/*footer settings*/
+
+.text-auto {
+    font-size: 15px;
+    color: grey;
+}
